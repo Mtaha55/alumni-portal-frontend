@@ -1,0 +1,317 @@
+.image-preview {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  background-color: #ffffff;
+}
+.container-fluid.user-profile {
+  height: 90vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.button-group,
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-group .btn-sm,
+.button-container .custom-add-button,
+.submit-button,
+.add-friend-button {
+  padding: 2px 6px;
+  font-size: 12px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.next-button,
+.save-button,
+.continue-button,
+.submit-button,
+.add-friend-button {
+  padding: 2px 6px;
+  font-size: 12px;
+  width: 150px;
+}
+
+.next-button,
+.save-button,
+.submit-button,
+.add-friend-button {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.continue-button {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.about-me {
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.profile-card,
+.about-me-card {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 200px;
+}
+
+.chat-card {
+  margin: 0;
+}
+
+.move-down {
+  margin-top: 10px;
+}
+
+.online-friends-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.online-friends-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.online-dot {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.left-aligned-text p {
+  margin-left: 0;
+  white-space: pre-wrap;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.add-friends-col {
+  position: absolute;
+  top: 242px;
+  right: 20px;
+  width: 300px;
+}
+
+.user-profile {
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.small-card,
+.profile-picture-container,
+.new-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 200px;
+}
+
+.profile-picture-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.friends-container {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-form-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.image-preview {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.new-form-container,
+.friends-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.custom-button {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+
+.submit-button {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.react-player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.new-form {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
+.submit-button {
+  width: 100px;
+  padding: 2px 6px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.custom-button {
+  width: 150px;
+  padding: 2px 6px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+.new-form-card .card-body,
+.friends-container .card-body {
+  padding-top: 20px;
+}
+
+.new-form-card .card-title,
+.friends-container .card-title {
+  margin-top: 18px;
+}

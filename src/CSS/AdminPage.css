@@ -1,0 +1,226 @@
+.admin-page {
+  display: flex;
+}
+
+.menu-column {
+  padding-left: 70px;
+  padding-top: 50px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.menu-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-right: 1px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.menu-button button {
+  width: 170px;
+}
+
+.wider-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  max-width: 1600px;
+  width: calc(100% - 250px);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.centered-title {
+  margin: 0;
+}
+
+.content-title {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.dropdown-item {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  color: black;
+}
+
+.btn-wide-purple {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #800080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.btn-sm-custom {
+  font-size: 12px;
+  padding: 3px 10px;
+}
+
+.btn-sm-popup {
+  font-size: 12px;
+  padding: 3px 10px;
+  width: 80px;
+}
+
+.pagination-btn {
+  font-size: 12px;
+  padding: 3px 10px;
+  width: auto;
+}
+
+/* Specific styles for form fields */
+.half-width {
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for labels to be bold */
+.bold-label {
+  font-weight: bold;
+}
+
+/* Common style for buttons to match Accept/Reject buttons */
+.common-btn {
+  font-size: 12px;
+  padding: 3px 10px;
+  width: 80px;
+}
+
+/* Style for Add New Organisation and Save Changes buttons */
+.wide-button {
+  font-size: 12px;
+  padding: 3px 10px;
+  width: auto;
+  min-width: 150px; /* Ensure the text fits properly */
+  text-align: center;
+}
+
+/* Centered text for modal titles */
+.centered-modal-title {
+  text-align: center;
+  width: 100%;
+}
+
+/* Centered text for modal bodies */
+.centered-modal-body {
+  text-align: center;
+}
+
+/* Hover effect for tabs */
+.nav-tabs .nav-link {
+  color: black;
+}
+
+.nav-tabs .nav-link.active {
+  color: black !important;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content-area {
+    padding: 15px;
+    width: calc(100% - 200px);
+  }
+
+  .menu-column {
+    width: 200px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-page {
+    flex-direction: column;
+  }
+
+  .menu-column {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-right: none;
+  }
+
+  .content-area {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .btn-wide-purple {
+    width: 100%;
+  }
+
+  .menu-button button {
+    width: 100%;
+  }
+
+  .black-border {
+    border: 2px solid black;
+    padding: 10px;
+  }
+
+  .text-left-align {
+    text-align: left;
+  }
+
+  .user-row:hover {
+    background-color: #f0f0f0;
+  }
+
+  .select-column {
+    border-right: 2px solid black;
+    padding-right: 5px;
+    pointer-events: none; /* Disable click events for the entire column */
+  }
+
+  .select-column input {
+    pointer-events: all; /* Enable click events for the input elements */
+  }
+
+  /* Add padding to the right of the select column to prevent edit triggering */
+  .select-column-padding {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
