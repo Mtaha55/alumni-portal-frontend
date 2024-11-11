@@ -1,48 +1,63 @@
 import React, { useState } from 'react';
 
-// A class or functional component for handling New User creation
+// En funktionell komponent för att hantera skapandet av nya användare
 const NewUser = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
 
     const handleCreateUser = () => {
-        // Logic to create a new user, e.g., an API call to create a user
         if (username && email) {
-            console.log('Creating user:', { username, email });
-            // Here, you would send the username and email to your backend
-            // For example, using fetch or axios to POST the data
-            alert('User created successfully!');
+            // API-URL till din backend-endpoint
+            const apiUrl = 'http://localhost:8080/api/users'; // Uppdatera med din faktiska backend-URL
+
+            // Skicka användarnamn och e-post till backend
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, email }), // Konvertera data till JSON
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to create user');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('User created:', data);
+                alert('User created successfully!');
+                // Återställ formulärfält efter lyckad skapelse
+                setUsername('');
+                setEmail('');
+            })
+            .catch(error => {
+                console.error('Error creating user:', error);
+                alert('Failed to create user. Please try again.');
+            });
         } else {
             alert('Please fill out both fields.');
         }
-    };
+    }
 
     return (
         <div>
             <h2>Create New User</h2>
-            <form>
-                <div>
-                    <label>Username:</label>
-                    <input 
-                        type="text" 
-                        value={username} 
-                        onChange={(e) => setUsername(e.target.value)} 
-                    />
-                </div>
-                <div>
-                    <label>Email:</label>
-                    <input 
-                        type="email" 
-                        value={email} 
-                        onChange={(e) => setEmail(e.target.value)} 
-                    />
-                </div>
-                <button type="button" onClick={handleCreateUser}>
-                    Create User
-                </button>
-            </form>
+            <input 
+                type="text" 
+                placeholder="Username" 
+                value={username} 
+                onChange={(e) => setUsername(e.target.value)} 
+            />
+            <input 
+                type="email" 
+                placeholder="Email" 
+                value={email} 
+                onChange={(e) => setEmail(e.target.value)} 
+            />
+            <button onClick={handleCreateUser}>Create User</button>
         </div>
     );
-};
+}
 
 export default NewUser;
