@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Hassan_45!",
-  database: "alumni-portal-backend-dev",
+  password: "",
+  database: "",
 });
 
 // Connect to MySQL
